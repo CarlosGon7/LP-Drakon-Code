@@ -30,7 +30,6 @@
 }
 
 .titulo-hero {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,8 +78,32 @@
     flex-direction: column;
     justify-content: center;
     flex: 1 0 0;
+}
 
-   
-
+.tech-content .tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
 
 }
+
+.tech-content .tech-icons .icon {
+        height: 85px;
+        width: 85px;
+        padding: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 48px;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(13.649999618530273px);
+
+        transition: all .3s ease;
+    }
+
+.tech-content .tech-icons .icon:hover{
+        box-shadow: 0 0 7.3px 0 rgba(234, 133, 51, 0.20), 0 0 45px 0 rgba(255, 20, 20, 0.48);
+    }
