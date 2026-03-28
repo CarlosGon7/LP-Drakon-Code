@@ -1,0 +1,129 @@
+.buttons-content {
+    display: flex;
+    flex-direction: row;
+
+    gap: 69px;
+}
+
+.cta-header .btn {
+    font-weight: 600;
+    color: var(--text-white);
+    height: fit-content;
+
+    gap: 28px;
+}
+
+.cta-header .btn .arrow {
+    width: 35px;
+}
+
+.cta-header .btn-header {
+    font-size: 16px;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+    padding: 4px 4px 4px 20px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 999px;
+}
+
+.cta-header .btn-header::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -4px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    box-shadow: 0 0 26px 0 rgba(255, 255, 255, 0);
+    transition: all .3s ease;
+}
+
+.btn-header:hover{
+    box-shadow: 0 0 26px 0 rgba(255, 255, 255, 0.41);
+}
+
+.buttons-content .btn {
+    font-weight: 600;
+    color: var(--text-white);
+    height: 56px;
+
+    gap: 28px;
+}
+
+.btn-primary {
+    font-size: 18px;
+    position: relative;
+
+    background: var(--gradient);
+
+    border-radius: 999px;
+    padding: 14px 6px 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    box-shadow: 0 0 26px 0 rgba(237, 35, 35, 0);
+    transition: all .3s ease;
+}
+
+.btn-primary:hover{
+    box-shadow: 0 0 26px 0 rgba(237, 35, 35, 0.41);
+}
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -6px;
+
+    border-radius: 999px;
+
+    background: linear-gradient(347deg,
+            rgba(255, 20, 20, .3) 1%,
+            rgba(237, 35, 35, .3) 60%,
+            rgba(234, 133, 51, .3) 82%);
+}
+
+.btn-secondary {
+    font-size: 18px;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+    padding: 14px 6px 14px 20px;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 999px;
+
+    box-shadow: 0 0 26px 0 rgba(255, 255, 255, 0);
+    transition: all .3s ease;
+}
+
+.btn-secondary:hover{
+    box-shadow: 0 0 26px 0 rgba(255, 255, 255, 0.41)
+}
+
+.btn-secondary::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    inset: -6px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+}
